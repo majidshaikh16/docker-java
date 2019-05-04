@@ -1,0 +1,27 @@
+version: '3'
+services: 
+  research-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev.yml
+    ports:
+      - '8080:8080'
+# "no" <- by default , always <- no matter what, on-faliure <- Once there is some unexpected error occured,
+# unless-stopped <- always restart unless(we the developers) stops explicitly
+    restart: always
+    volumes:
+      - ./target:/home/docker/test
+
+  research-test:   
+    build:
+        context: .
+        dockerfile: Dockerfile.dev.yml 
+    volumes:
+      - .:/home/docker/test
+      - /home/webwerks/.m2:/root/.m2 
+    command: ["mvn","clean","install"]     
+
+  research-prod:
+    image: research/prod
+    ports:
+      - 8080:8080

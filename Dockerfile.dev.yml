@@ -1,0 +1,15 @@
+#download the base image in the container
+FROM maven:alpine
+
+#create a working directory so that all the files and dependencies are expected to be found under the listed dir below
+WORKDIR /home/docker/test
+#run the clean up before the container get up
+#COPY ./target/Research-exec.jar ./
+#COPY ./ ./
+#RUN mvn clean install
+#COPY /target/Reasearch-exec.jar /target/
+#docker run -p 8080:8080 -v $(pwd)/target:/home/docker/test research
+
+#tell the image what to do when it starts the container
+#CMD ["mvn","clean","install"]
+CMD ["java","-jar", "Research-exec.jar"]

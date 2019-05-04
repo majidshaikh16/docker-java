@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jan 25 16:50:24 IST 2019
+feign-core-9.5.1.jar>central=
+feign-core-9.5.1.pom>central=
+feign-core-9.5.1-sources.jar>central=

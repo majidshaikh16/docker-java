@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.axis.module.service</groupId>
+  <artifactId>Engage-Pro-Module-Service</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190426100657</lastUpdated>
+  </versioning>
+</metadata>

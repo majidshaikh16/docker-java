@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.axis.txb.service</groupId>
+  <artifactId>Engage-Pro-Txb-Service</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190426092430</lastUpdated>
+  </versioning>
+</metadata>

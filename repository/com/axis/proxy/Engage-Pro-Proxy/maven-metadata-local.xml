@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.axis.proxy</groupId>
+  <artifactId>Engage-Pro-Proxy</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190426092405</lastUpdated>
+  </versioning>
+</metadata>

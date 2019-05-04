@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.axis.admin.service</groupId>
+  <artifactId>Engage-Pro-Admin-Service</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190426100705</lastUpdated>
+  </versioning>
+</metadata>
