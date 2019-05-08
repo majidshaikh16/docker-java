@@ -6,7 +6,7 @@ before_install:
   - docker build -t majidshaikh16/docker-java:dev -f Dockerfile.dev .
 
 script:
-  - docker run -p 8080:8080 majidshaikh16/docker-java
+  - docker run -p 8080:8080 majidshaikh16/docker-java:dev
 
 after_success:
   - docker build -t majidshaikh16/docker-java:prod .
