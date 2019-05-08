@@ -3,7 +3,12 @@ services:
   - docker
 
 before_install:
-  - docker build -t majidshaikh16/docker-java -f Dockerfile.dev .
+  - docker build -t majidshaikh16/docker-java:dev -f Dockerfile.dev .
 
 script:
   - docker run -p 8080:8080 majidshaikh16/docker-java
+
+after_success:
+  - docker build -t majidshaikh16/docker-java:prod .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
+  - docker push majidshaikh16/docker-java:prod
