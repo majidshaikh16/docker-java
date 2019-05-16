@@ -22,6 +22,8 @@ services:
     command: ["mvn","clean","install"]     
 
   research-prod:
+    build: .
     image: research/prod
     ports:
       - 8080:8080
+    restart: always
